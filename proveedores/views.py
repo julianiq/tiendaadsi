@@ -4,7 +4,7 @@ from proveedores.models import proveedores
 from .serializers import proveedoresSerializer
 
 # Create your views here.
-class proveedoresSoporteListCreate(generics.ListCreateAPIView):
+class proveedoresListCreate(generics.ListCreateAPIView):
     queryset= proveedores.objects.all()
     serializer_class=proveedoresSerializer
     

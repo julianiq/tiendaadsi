@@ -17,7 +17,7 @@ class clienteListCreate(generics.ListCreateAPIView):
     queryset= cliente.objects.all()
     serializer_class=clienteSerializer
     
-class ProductosUpdateDelete(generics.RetrieveUpdateDestroyAPIView):
+class clienteUpdateDelete(generics.RetrieveUpdateDestroyAPIView):
     queryset= cliente.objects.all()
     serializer_class=clienteSerializer
 
