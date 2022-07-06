@@ -9,9 +9,9 @@ class clienteSerializer(serializers.ModelSerializer):
 class ProductosSerializer(serializers.ModelSerializer):
     class Meta:
         model= Productos
-        fields=['__all__']
+        fields='__all__'
 
 class facturaSerializer(serializers.ModelSerializer):
     class Meta:
         model= factura
-        fields=['__all__']
+        fields='__all__'

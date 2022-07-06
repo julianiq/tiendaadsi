@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 class Productos(models.Model):
     producto = models.CharField(max_length=64)
     cantidad = models.IntegerField(null=True, blank=True)	
-    precio = models.BooleanField(default=True)
+    precio = models.FloatField(null=True, blank=False)
     detalle= models.TextField(blank=True)
 
 class cliente(models.Model):
